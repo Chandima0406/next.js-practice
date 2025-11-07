@@ -1,3 +1,7 @@
 export default function page() {
-  return <div>Chandima Wijerathna</div>;
+  return (
+    <div>
+      <h1>Sajith Chandima Wijerathna</h1>
+    </div>
+  );
 }
