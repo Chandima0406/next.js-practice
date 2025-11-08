@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <div><h1>Enter Your Name</h1></div>
       <form>
         <label htmlFor="name">Your Name:</label>
         <input id="name" type="text" placeholder="Type your name...." />
+        <button type='submit'>Predict Data</button>
       </form>
     </div>
   );
