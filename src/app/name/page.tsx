@@ -16,7 +16,8 @@ export default function page() {
     <div>
       <div><h1>Enter Your Name</h1></div>
       <form>
-        <input type="text" placeholder="Type your name...." />
+        <label htmlFor="name">Your Name:</label>
+        <input id="name" type="text" placeholder="Type your name...." />
       </form>
     </div>
   );
