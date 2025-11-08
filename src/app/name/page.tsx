@@ -1,7 +1,10 @@
 export default function page() {
   return (
     <div>
-      <h1>Sajith Chandima Wijerathna</h1>
+      <div><h1>Enter Your Name</h1></div>
+      <form>
+        <input type="text" placeholder="Type your name...."></input>
+      </form>
     </div>
   );
 }
