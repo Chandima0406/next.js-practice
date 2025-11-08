@@ -1,23 +1,23 @@
-import { Metadata } from 'next';
+"use client";
+import { useState } from "react";
 
-export const metadata: Metadata = {
-  title: 'Enter Your Name - Next.js App',
-  description: 'A simple form to enter your name. Built with Next.js for optimal performance and SEO.',
-  keywords: 'name form, Next.js, user input',
-  openGraph: {
-    title: 'Enter Your Name',
-    description: 'Interactive name entry page.',
-    type: 'website',
-  },
-};
+export default function Page() {
+  const [inputVal, setInputVal] = useState("");
 
-export default function page() {
+  const handleSubmit = () => {};
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="name">Your Name:</label>
-        <input id="name" type="text" placeholder="Type your name...." />
-        <button type='submit'>Predict Data</button>
+        <input
+          id="name"
+          type="text"
+          placeholder="Type your name...."
+          value={inputVal}
+          onChange={(e) => setInputVal(e.target.value)}
+        />
+        <button type="submit">Predict Data</button>
       </form>
     </div>
   );
